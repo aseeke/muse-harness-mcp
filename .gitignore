@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+*.key
+*.pem
+id_ed25519
+服务器部署完成信息.md
