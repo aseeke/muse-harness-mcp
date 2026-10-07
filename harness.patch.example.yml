@@ -1,0 +1,14 @@
+# Append to your HARNESS MCP patch/profile; replace the paths, URL and key.
+- insert:
+    - id: mcp-muse-media
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: musemedia
+        transport: stdio
+        command: '/absolute/path/to/python'
+        args:
+          - '/absolute/path/to/muse-harness-mcp/muse_harness_mcp.py'
+        env:
+          MUSE2API_BASE_URL: 'https://api.example.com/v1'
+          MUSE2API_KEY: 'm2a_replace_with_your_private_key'
+        toolCallTimeoutMs: 720000
